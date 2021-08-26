@@ -18,3 +18,34 @@ console.log(rounded);
 var number=-33;
 const absolute=Math.abs(number);
 console.log(absolute);
+
+//finding largest number from an array by for looping
+let numbers=[1,2,5,8,6,456,44,66,88,10,20];
+function largestNumber(numbers) {
+    let max=numbers[0];
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        if (element>max) {
+            max=element;
+        }
+        
+    }
+    return max;
+}
+const maxNumber=largestNumber(numbers);
+console.log(maxNumber);
+
+//smallest number from an array by for looping
+function smallestNumber(numbers) {
+    let min=numbers[0];
+    for (let i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        if (element<min) {
+            min=element;
+        }
+    }
+    return min;
+}
+let allNumbers=[1,2,5,8,6,456,44,66,88,10,20];
+const minNumber=smallestNumber(allNumbers);
+console.log(minNumber);
