@@ -73,16 +73,16 @@ console.log(totalDeliveryCost);
 
 
 //4. problem solving 4th
-const friends=['Sakib khan','Amir Khan','Anika','Sohel Mahmud','Asifur','Tania','Anika','Dalia','Misso','Robel Kahn'];
+const friends=['Sakib khan','Amir' ,'Khan','Anika','Sohel Mahmud','Asifur','Tania','Robel Kahn'];
 function perfectFriend(friends) {
-    let tinyFriend=friends[0];
+    let properFriend=friends[0];
     for(const friend of friends){
         // console.log(friend);
-        if (friend.length<tinyFriend.length && friend.length==5) {
-            tinyFriend=friend;
+        if (friend.length<properFriend.length && friend.length==5) {
+            properFriend=friend;
         }
     }
-    return tinyFriend;
+    return properFriend;
 }
 const bestFriend=perfectFriend(friends);
 console.log(bestFriend);
